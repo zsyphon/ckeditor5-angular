@@ -1,0 +1,8 @@
+/**
+ * @license Copyright (c) 2003-2021, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md.
+ */
+export * from './ckeditor';
+export * from './ckeditor.component';
+export * from './ckeditor.module';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiLi4vLi4vc3JjL2NrZWRpdG9yLyIsInNvdXJjZXMiOlsiaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7OztHQUdHO0FBRUgsY0FBYyxZQUFZLENBQUM7QUFDM0IsY0FBYyxzQkFBc0IsQ0FBQztBQUNyQyxjQUFjLG1CQUFtQixDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXHJcbiAqIEBsaWNlbnNlIENvcHlyaWdodCAoYykgMjAwMy0yMDIxLCBDS1NvdXJjZSAtIEZyZWRlcmljbyBLbmFiYmVuLiBBbGwgcmlnaHRzIHJlc2VydmVkLlxyXG4gKiBGb3IgbGljZW5zaW5nLCBzZWUgTElDRU5TRS5tZC5cclxuICovXHJcblxyXG5leHBvcnQgKiBmcm9tICcuL2NrZWRpdG9yJztcclxuZXhwb3J0ICogZnJvbSAnLi9ja2VkaXRvci5jb21wb25lbnQnO1xyXG5leHBvcnQgKiBmcm9tICcuL2NrZWRpdG9yLm1vZHVsZSc7XHJcbiJdfQ==
