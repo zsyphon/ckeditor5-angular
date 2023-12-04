@@ -15,7 +15,8 @@
     "build-package": "node ./scripts/build-package.js",
     "release": "node ./scripts/release.js",
     "postversion": "npm run build-package",
-    "build-ckeditor": "cd ckeditor && webpack --mode production"
+    "build-ckeditor": "cd ckeditor && webpack --mode production",
+    "prepare": "node ./scripts/build-package.js"
   },
   "dependencies": {
     "@angular/animations": "^11.0.4",
