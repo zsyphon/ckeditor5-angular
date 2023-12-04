@@ -10,7 +10,7 @@ import {
 	NgZone,
 	EventEmitter,
 	forwardRef,
-	AfterViewInit, OnDestroy,
+	AfterViewInit,  OnChanges, OnDestroy, SimpleChanges,
 	ElementRef
 } from '@angular/core';
 
@@ -55,7 +55,7 @@ export interface ChangeEvent {
 		}
 	]
 } )
-export class CKEditorComponent implements AfterViewInit, OnDestroy, ControlValueAccessor {
+export class CKEditorComponent implements AfterViewInit, OnDestroy,OnChanges, ControlValueAccessor {
 	/**
 	 * The reference to the DOM element created by the component.
 	 */
@@ -211,6 +211,16 @@ export class CKEditorComponent implements AfterViewInit, OnDestroy, ControlValue
 	public constructor( elementRef: ElementRef, ngZone: NgZone ) {
 		this.ngZone = ngZone;
 		this.elementRef = elementRef;
+	}
+
+	/**
+	 *Implementing the OnChanges interface.
+	 *Whenever 'data' property changes we need to update the contents of the editor.
+	*/
+	public ngOnChanges( changes: SimpleChanges ): void {
+		if ( Object.prototype.hasOwnProperty.call( changes, 'data' ) && changes.data && !changes.data.isFirstChange() ) {
+			this.writeValue( changes.data.currentValue );
+		}
 	}
 
 	// Implementing the AfterViewInit interface.
